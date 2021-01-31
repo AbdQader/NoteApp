@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">KeepNotes</string>
+
+    <!-- For Navigation Drawer Menu -->
+    <string name="notes">Notes</string>
+    <string name="tasks">Tasks</string>
+    <string name="important">Important</string>
+    <string name="notImportant">NotImportant</string>
+    <string name="deleted">Deleted</string>
+    <string name="label">Create New Label</string>
+    <string name="settings">Settings</string>
+
+    <!-- For Navigation Drawer -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- For Navigation Drawer Header -->
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- For Main Menu -->
+    <string name="search">Search</string>
+    <string name="done">Done</string>
+    <string name="delete">Delete</string>
+    <string name="clear">Clear</string>
+
+    <!-- For Note Item -->
+    <string name="noteTitle">Note Title</string>
+    <string name="noteContent">Note Content</string>
+    <string name="noteDate">Note Date</string>
+
+    <!-- For Add Note -->
+    <string name="title">Title</string>
+    <string name="content">Note</string>
+
+    <!-- For Note Bottom Sheet -->
+    <string name="moreOptions">More Options</string>
+    <string name="pickColor">Pick Color</string>
+    <string name="addImage">Add Image</string>
+    <string name="recording">Recording</string>
+
+</resources>

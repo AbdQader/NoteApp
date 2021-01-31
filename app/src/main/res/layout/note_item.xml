@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    app:cardBackgroundColor="@color/noteBackgroundColor"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/noteCard">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/noteImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:visibility="gone"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@id/noteTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/noteTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:maxLines="1"
+            android:text="@string/noteTitle"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/noteImage"
+            app:layout_constraintTop_toBottomOf="@+id/noteImage"
+            app:layout_constraintEnd_toStartOf="@+id/noteDate" />
+
+        <TextView
+            android:id="@+id/noteContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:maxLines="2"
+            android:lines="2"
+            android:text="@string/noteContent"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/noteTitle"
+            app:layout_constraintTop_toBottomOf="@id/noteTitle" />
+
+        <TextView
+            android:id="@+id/noteDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:maxLines="1"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/noteDate"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintBottom_toBottomOf="@+id/noteTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/noteTitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

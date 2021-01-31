@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhit"
+    android:id="@+id/add_note"
+    tools:context=".ui.fragments.AddNote">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgNote"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/txtNoteTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/colorWhit"
+                android:ems="10"
+                android:hint="@string/title"
+                android:inputType="textMultiLine"
+                android:textColor="@color/colorBlack"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgNote" />
+
+            <EditText
+                android:id="@+id/txtNoteContent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorWhit"
+                android:ems="10"
+                android:hint="@string/content"
+                android:inputType="textMultiLine"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/txtNoteTitle"
+                app:layout_constraintStart_toStartOf="@+id/txtNoteTitle"
+                app:layout_constraintTop_toBottomOf="@+id/txtNoteTitle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/note_bottom_sheet" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

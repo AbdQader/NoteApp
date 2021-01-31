@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>-->
+
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#DA4336</color>
+
+    <!-- Color -->
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhit">#FFFFFF</color>
+
+    <!-- Note Colors -->
+    <color name="noteBackgroundColor">#F9F9F9</color>
+    <color name="noteTitleColor">#000000</color>
+    <color name="noteContentColor">#4A4A4A</color>
+    <color name="noteDateColor">#4A4A4A</color>
+
+    <!-- For floating action button -->
+    <!-- menu label -->
+    <color name="labelColorNormal">#333333</color>
+    <color name="labelColorPressed">#444444</color>
+    <color name="labelColorRipple">#66FFFFFF</color>
+
+    <!-- menu icon -->
+    <color name="iconColorNormal">#DA4336</color>
+    <color name="iconColorPressed">#E75043</color>
+    <color name="iconColorRipple">#99FFFFFF</color>
+
+    <!-- Note Background Colors -->
+    <color name="ColorGrayNote">#606570</color>
+    <color name="ColorBlueNote">#2196F3</color>
+    <color name="ColorYellowNote">#FFEB3B</color>
+    <color name="ColorWhiteNote">#FFFFFF</color>
+    <color name="ColorPurpleNote">#9C27B0</color>
+    <color name="ColorGreenNote">#0AEBAF</color>
+    <color name="ColorOrangeNote">#F44336</color>
+    <color name="ColorBlackNote">#202734</color>
+
+    <!-- For Bottom Sheet Color -->
+    <color name="bottomSheetColor">#F3F3F3</color>
+
+    <!--<color name="ColorBlueNote">#4E33FF</color>
+    <color name="ColorYellowNote">#FFD633</color>
+    <color name="ColorPurpleNote">#AE3B76</color>
+    <color name="ColorOrangeNote">#FF7746</color>-->
+
+</resources>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:behavior_peekHeight="40dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:background="@color/bottomSheetColor"
+    android:id="@+id/note_bottom_sheet">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtBottomSheetTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:includeFontPadding="false"
+            android:text="@string/moreOptions"
+            android:textColor="@color/colorBlack"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/blueNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/note_color_1"
+            app:layout_constraintStart_toEndOf="@+id/greenNote"
+            app:layout_constraintTop_toTopOf="@+id/greenNote" />
+
+        <ImageView
+            android:id="@+id/whitNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_done"
+            android:background="@drawable/note_color_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtBottomSheetTitle" />
+
+        <ImageView
+            android:id="@+id/orangeNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/note_color_4"
+            app:layout_constraintStart_toEndOf="@+id/blueNote"
+            app:layout_constraintTop_toTopOf="@+id/blueNote" />
+
+        <ImageView
+            android:id="@+id/yellowNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/note_color_5"
+            app:layout_constraintStart_toEndOf="@+id/purpleNote"
+            app:layout_constraintTop_toTopOf="@+id/purpleNote" />
+
+        <ImageView
+            android:id="@+id/purpleNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/note_color_6"
+            app:layout_constraintStart_toEndOf="@+id/whitNote"
+            app:layout_constraintTop_toTopOf="@+id/whitNote" />
+
+        <ImageView
+            android:id="@+id/greenNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/note_color_7"
+            app:layout_constraintStart_toEndOf="@+id/yellowNote"
+            app:layout_constraintTop_toTopOf="@+id/yellowNote" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:text="@string/pickColor"
+            android:textColor="@color/colorBlack"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/orangeNote"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/orangeNote"
+            app:layout_constraintTop_toTopOf="@id/orangeNote" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_image"
+            app:tint="@color/colorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/whitNote" />
+
+        <TextView
+            android:id="@+id/txtPickImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/addImage"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_mic"
+            app:tint="@color/colorBlack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/txtRecording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/recording"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

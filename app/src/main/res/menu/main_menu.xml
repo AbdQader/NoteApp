@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:title="@string/search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView" />
+
+    <item
+        android:id="@+id/delete"
+        android:title="@string/delete"
+        android:icon="@drawable/ic_delete"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/notImportant"
+        android:title="@string/notImportant"
+        android:icon="@drawable/ic_star_border"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/important"
+        android:title="@string/important"
+        android:icon="@drawable/ic_important"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/done"
+        android:title="@string/done"
+        android:icon="@drawable/ic_done"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/clear"
+        android:title="@string/clear"
+        android:icon="@drawable/ic_clear"
+        app:showAsAction="ifRoom" />
+
+</menu>

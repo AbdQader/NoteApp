@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/notes">
+
+    <fragment
+        android:id="@+id/notes"
+        android:name="com.example.keepnotes.ui.fragments.NotesFragment"
+        android:label="Notes"
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/action_notes_to_addNote"
+            app:destination="@id/addNote" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addNote"
+        android:name="com.example.keepnotes.ui.fragments.AddNote"
+        android:label="Add Note"
+        tools:layout="@layout/add_note" >
+        <action
+            android:id="@+id/action_addNote_to_notes"
+            app:destination="@id/notes"
+            app:popUpTo="@id/notes" />
+        <argument
+            android:name="note"
+            app:argType="com.example.keepnotes.model.Note"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tasks"
+        android:name="com.example.keepnotes.ui.fragments.TasksFragment"
+        android:label="Tasks"
+        tools:layout="@layout/fragment_tasks" />
+
+    <fragment
+        android:id="@+id/important"
+        android:name="com.example.keepnotes.ui.fragments.ImportantFragment"
+        android:label="Important"
+        tools:layout="@layout/fragment_important" >
+        <action
+            android:id="@+id/action_important_to_addNote"
+            app:destination="@id/addNote" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/deleted"
+        android:name="com.example.keepnotes.ui.fragments.DeletedFragment"
+        android:label="Deleted"
+        tools:layout="@layout/fragment_deleted" >
+        <action
+            android:id="@+id/action_deleted_to_addNote"
+            app:destination="@id/addNote" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addLabel"
+        android:name="com.example.keepnotes.ui.fragments.AddLabel"
+        android:label="Add Label"
+        tools:layout="@layout/add_label" />
+
+</navigation>

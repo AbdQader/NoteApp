@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/notes"
+            android:title="@string/notes"
+            android:icon="@drawable/ic_notes"
+            android:checkable="true" />
+
+        <item
+            android:id="@+id/tasks"
+            android:title="@string/tasks"
+            android:icon="@drawable/ic_task"
+            android:checkable="true" />
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/addLabel"
+            android:title="@string/label"
+            android:icon="@drawable/ic_add"
+            android:checkable="true" />
+    </group>
+
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/important"
+            android:title="@string/important"
+            android:icon="@drawable/ic_important"
+            android:checkable="true" />
+
+        <item
+            android:id="@+id/deleted"
+            android:title="@string/deleted"
+            android:icon="@drawable/ic_delete"
+            android:checkable="true" />
+    </group>
+
+    <group
+        android:id="@+id/group4"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/setting"
+            android:title="@string/settings"
+            android:icon="@drawable/ic_settings"
+            android:checkable="true" />
+    </group>
+
+</menu>
